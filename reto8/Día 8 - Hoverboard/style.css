@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    justify-items: center;
+
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    /* background-color: red; */
+    margin: auto;
+  
+  }
+  
+  .square {
+    width: 20px;
+    height: 20px;
+    background-color: #1a1a1a;
+    margin: 2px;
+    transition: 1.5s;
+  }
+
+  
+  .square:hover {
+    transition-duration: 0s;
+  }
