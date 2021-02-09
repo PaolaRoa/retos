@@ -29,7 +29,7 @@ function checkBoxes() {
     
     //console.log(window.innerHeight / 5 * 4)
     
-    const triggerBottom = window.innerHeight / 6 * 4
+    const triggerBottom = window.innerHeight / 7 * 5
 
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
