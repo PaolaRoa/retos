@@ -35,11 +35,11 @@ h1 {
 }
 
 .box:nth-of-type(even) {
-  display: inline;
+ 
   transform: translateX(-100vw);
 }
 .box:nth-of-type(odd) {
-  display: inline;
+  
   transform: translateX(100vw);
 }
 
