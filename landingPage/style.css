@@ -1,12 +1,14 @@
 
 
 body{
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(43,15,98,1) 90%, rgb(80, 24, 190) 100%);
-    height: 100vh;
+    height: 100vh; */
     /* background: #0f0c29;   */
     /* background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  
     background: linear-gradient(to top, #24243e, #302b63, #0f0c29);  */
+    background-image: linear-gradient(to left bottom, #0b001f, #171352, #2a198a, #4719c4, #6f00ff);
+    height: 100vh;
 }
 
 
