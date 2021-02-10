@@ -63,7 +63,11 @@ body {
 
 .user-list li {
   display: flex;
-  padding: 20px;
+  padding: 15px;
+  align-items: center;
+}
+.user-list li div{
+  padding: 10px;
 }
 
 
@@ -72,7 +76,7 @@ body {
 }
 
 .user-list .user-info h4 {
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 .user-list .user-info p {
@@ -85,4 +89,12 @@ body {
 
 .user-list li.hide {
   display: none;
+}
+
+.photo{
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
