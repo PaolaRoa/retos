@@ -21,4 +21,3 @@ const createList = () =>{
 
 createList()
 
-console.log(prevRetos)
