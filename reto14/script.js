@@ -5,8 +5,6 @@ buttons.forEach(button => {
         const x = e.clientX
         const y = e.clientY
 
-        // console.log(x,y);
-
         const buttonTop = e.target.offsetTop
         const buttonLeft = e.target.offsetLeft
 
@@ -17,10 +15,16 @@ buttons.forEach(button => {
         
         console.log(xInside,yInside);
 
-        if(xInside > 0 && yInside > 0){
-            console.log(e.target)
-            e.target.classList.add("circle")
-        }
+        const circle = document.createElement("span")
+        circle.classList.add("circle")
+        circle.style.top = `${yInside}px`
+        circle.style.left = `${xInside}px`
+
+        e.target.appendChild(circle)
+        
+        console.log(circle)
+
+       setTimeout(()=> circle.remove(), 300)
 
     })
 })
