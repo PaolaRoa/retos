@@ -1,5 +1,6 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap');
+/* font-family: 'Major Mono Display', monospace;
+font-family: 'Montserrat', sans-serif; */
 body{
     /* background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(43,15,98,1) 90%, rgb(80, 24, 190) 100%);
@@ -9,9 +10,42 @@ body{
     background: linear-gradient(to top, #24243e, #302b63, #0f0c29);  */
     background-image: linear-gradient(to left bottom, #0b001f, #171352, #2a198a, #4719c4, #6f00ff);
     height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 72px;
+    color: blanchedalmond;
+}
 
 #icon{
     width: 7vw;
+}
+
+iframe{
+    background-color: black;
+}
+
+ul{
+    text-decoration: none;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    text-align: center;
+    color: white;
+    background-color: black;
+    list-style: none;
+    width: 100vw;
+    margin: 0;
+}
+
+.retos-list{
+    width: 100vw;
+    margin: 0;
 }
