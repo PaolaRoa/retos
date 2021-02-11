@@ -1,13 +1,16 @@
 const frameCont = document.getElementById("prevRetos");
 const atras = document.querySelector("#atras");
 const adelante = document.querySelector("#adelante");
-const list = document.getElementById("lista")
+const list = document.querySelector(".lista")
+const showList = document.querySelector(".listShow");
+
+
 let url = ``
 let retosurl = []
 let position = 0;
 
 
-console.log(atras)
+console.log(list)
 
 adelante.addEventListener('click', ()=>{
     console.log("clic adelante")
@@ -68,3 +71,5 @@ createList()
 console.log(retosurl[position])
 
 // console.log(retosurl)
+
+showList.addEventListener('click', ()=> list.classList.toggle('active'))
