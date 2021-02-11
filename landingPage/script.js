@@ -1,4 +1,4 @@
-
+const frame = document.getElementById("prevRetos");
 const list = document.getElementById("lista")
 let url = ``
 let retosurl = []
@@ -21,4 +21,4 @@ const createList = () =>{
 
 createList()
 
-console.log(retosurl)
+console.log(prevRetos)
