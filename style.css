@@ -61,3 +61,15 @@ li{
     text-align: center;
     padding: 20px;
 }
+button {  
+    
+    margin-top: -40vh;
+    transform: translateY(-40vh);
+
+    /* top: 50%;
+    transform: translateY(-90%);
+    cursor: pointer;
+    z-index: 2; */
+    
+  }
+

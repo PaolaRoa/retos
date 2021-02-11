@@ -1,14 +1,44 @@
-const frame = document.getElementById("prevRetos");
+const frameCont = document.getElementById("prevRetos");
+const atras = document.querySelector("#atras");
+const adelante = document.querySelector("#adelante");
 const list = document.getElementById("lista")
 let url = ``
 let retosurl = []
+let position = 0;
 
 
+console.log(atras)
+
+adelante.addEventListener('click', ()=>{
+    console.log("clic adelante")
+    position++;
+    
+    if (position > 24){
+        position = 0
+    };
+    console.log(position)
+    activeFrame();
+    
+}
+)
+
+atras.addEventListener('click', ()=>{
+    console.log("clic adelante")
+    position--;
+    
+    if (position < 0){
+        position = 24
+    };
+    activeFrame();
+    console.log(position)
+    
+}
+)
 
 for(i=1; i<26; i++){
     url = `/reto${i}/index.html`;
     retosurl.push(url);  
-    console.log(url)
+    // console.log(url)
 }
 
 const createList = () =>{
@@ -20,6 +50,21 @@ const createList = () =>{
     })
 } 
 
-createList()
 
-console.log(retosurl)
+
+const activeFrame = ()=>{
+    let src = retosurl[position];
+    const newFrame= frameCont.childNodes[3].cloneNode()
+    newFrame.setAttribute('src', src);
+    // newFrame.setAttribute('name', 'frame');
+    // newFrame.classList.add('frame');
+    let oldFrame = frameCont.childNodes[3]
+    frameCont.replaceChild(newFrame, oldFrame);
+   
+    console.log(newFrame)
+}
+
+createList()
+console.log(retosurl[position])
+
+// console.log(retosurl)
