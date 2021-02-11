@@ -6,8 +6,9 @@ let retosurl = []
 
 
 for(i=1; i<26; i++){
-    url = `../../reto${i}/index.html`;
+    url = `/reto${i}/index.html`;
     retosurl.push(url);  
+    console.log(url)
 }
 
 const createList = () =>{
@@ -21,3 +22,4 @@ const createList = () =>{
 
 createList()
 
+console.log(retosurl)
