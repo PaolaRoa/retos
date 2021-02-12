@@ -6,9 +6,10 @@ const showList = document.querySelector(".listShow");
 const search = document.getElementById('search');
 const searchList = document.querySelector('.searchList');
 const sIcon = document.querySelector('.fas');
-const sBar = document.querySelector('#searchBar')
+const sBar = document.querySelector('#searchBar');
+const rName = document.querySelector('#rName')
 
-console.log(sIcon, sBar)
+console.log(rName)
 
 
 const nombres=[
@@ -120,8 +121,6 @@ let retosurl = []
 let position = 0;
 
 
-// console.log(list)
-
 adelante.addEventListener('click', ()=>{
     console.log("clic adelante")
     position++;
@@ -172,14 +171,20 @@ const createList = () =>{
 
 const activeFrame = ()=>{
     let src = retosurl[position];
+    
     const newFrame= frameCont.childNodes[3].cloneNode()
     newFrame.setAttribute('src', src);
     // newFrame.setAttribute('name', 'frame');
     // newFrame.classList.add('frame');
     let oldFrame = frameCont.childNodes[3]
     frameCont.replaceChild(newFrame, oldFrame);
-   
-    console.log(newFrame)
+    setName()
+    
+}
+
+const setName = ()=>{
+  let nameR = nombres[position].nombre;
+  rName.innerHTML = nameR
 }
 
 createList()
@@ -229,5 +234,7 @@ function cleanList(){
   // listtoClean.forEach(item=> listtoclean.)
 }
 
+
 sIcon.addEventListener('click', ()=> sBar.classList.toggle('hide'));
-                  
+
+setName()
