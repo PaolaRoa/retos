@@ -197,10 +197,11 @@ items.forEach(item => {
 
 showList.addEventListener('click', ()=> list.classList.toggle('active'))
 
+const liSearch = document.querySelectorAll('.liSearch');
 function filterData(searchTerm) {
 
-    const liSearch = document.querySelectorAll('.liSearch');
-    console.log(liSearch)
+
+    
     liSearch.forEach(item => {
         if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
             item.classList.remove('hide')
@@ -212,4 +213,16 @@ function filterData(searchTerm) {
     
 }
 
-search.addEventListener('input', (e)=>filterData(e.target.value)) 
+search.addEventListener('input', (e)=>filterData(e.target.value)) ;
+search.addEventListener('focusout', cleanList)
+
+function cleanList(){
+
+  liSearch.forEach(item => item.classList.add('hide')
+
+  )
+  
+  // let listtoClean = searchList.childNodes;
+  // console.log(listtoClean)
+  // listtoClean.forEach(item=> listtoclean.)
+}
