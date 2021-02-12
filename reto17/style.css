@@ -11,6 +11,23 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+ul{
+  list-style: none;
+}
+li{
+  padding: 10px;
+}
+.container{
+  display: block;
+  position: fixed;
 }
 
 .text {
@@ -32,4 +49,48 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
+}
+.close-btn{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  margin-left:20vw;
+}
+
+.nav{
+  display: none;
+  align-self: flex-start;
+  align-content: flex-end;
+  height: 100vh;
+  transition-duration: 1000ms;
+}
+.nav-black{
+  background-color: black;
+  width: 27vw;
+  transition-duration: 1000ms;
+
+}
+.nav-red{
+  background-color: red;
+  width: 25vw;
+  transition-duration:1500ms ;
+  
+}
+.nav-white{
+  background-color: rgb(255, 255, 255);
+  position:fixed;
+  width: 23vw;
+  transition-duration: 2000ms;
+}
+
+.visible{
+  display: flex;
+  flex-direction: column;
+
+}
+.btnHide{
+  display: none;
+}
+#logoMenu{
+  margin: 20px;
 }
