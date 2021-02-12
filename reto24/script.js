@@ -2,7 +2,7 @@ const ratings = document.querySelectorAll('.rating')
 const ratingsContainer = document.querySelector('.panel-container')
 const sendBtn = document.querySelector('#send')
 const panel = document.querySelector('#panel')
-
+let selectedRating = '';
 ratingsContainer.addEventListener('click', (e) => {
     if(e.target.parentNode.classList.contains('rating')) {
         removeActive()
@@ -13,8 +13,10 @@ ratingsContainer.addEventListener('click', (e) => {
 
 sendBtn.addEventListener('click', (e) => {
     panel.innerHTML = `
-    <i class="fa-heart"></i>
+    <i class="fa fa-heart"></i>
     <h3>Thank you</h3>
+    <h4>Feedback: ${selectedRating}</h4>
+    <p>We'll use your feedback to improve aour customer support</p>
 `
 console.log(panel)
     let toRemove = e.target.parentNode.children;
