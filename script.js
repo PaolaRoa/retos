@@ -221,7 +221,7 @@ function filterData(searchTerm) {
 }
 
 search.addEventListener('input', (e)=>filterData(e.target.value)) ;
-search.addEventListener('focusout', cleanList)
+search.addEventListener('focusout', ()=>setTimeout(cleanList, 1000) )
 
 function cleanList(){
 

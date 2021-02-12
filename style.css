@@ -63,10 +63,7 @@ ul{
     background: linear-gradient(90deg, hsla(59, 96%, 43%, 1) 0%, hsla(48, 95%, 57%, 1) 0.2%, hsla(35, 82%, 55%, 1) 0.4%, hsla(60, 77%, 46%, 1) 0.6%, hsla(61, 93%, 37%, 1) 0.8%);
 
 }
-.liSearch{
-    background-color: red;
-    color: white;
-}
+
 .hide{
     display: none;
 }
@@ -137,7 +134,7 @@ a:hover{
  }
 
  .liSearch{
-    background: hsla(59, 96%, 43%, 1);
+    background: linear-gradient(90deg, hsla(59, 96%, 43%, 1) 0%, hsla(48, 95%, 57%, 1) 0.2%, hsla(35, 82%, 55%, 1) 0.4%, hsla(60, 77%, 46%, 1) 0.6%, hsla(61, 93%, 37%, 1) 0.8%);
     padding: 5px;
     float: inline-start;
 
@@ -170,3 +167,11 @@ i{
      padding: 20px;
      text-align: center;
  }
+
+.searchList{
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+
+
+}
