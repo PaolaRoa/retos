@@ -5,8 +5,10 @@ const list = document.querySelector(".lista")
 const showList = document.querySelector(".listShow");
 const search = document.getElementById('search');
 const searchList = document.querySelector('.searchList');
+const sIcon = document.querySelector('.fas');
+const sBar = document.querySelector('#searchBar')
 
-// console.log(searchList)
+console.log(sIcon, sBar)
 
 
 const nombres=[
@@ -226,3 +228,6 @@ function cleanList(){
   // console.log(listtoClean)
   // listtoClean.forEach(item=> listtoclean.)
 }
+
+sIcon.addEventListener('click', ()=> sBar.classList.toggle('hide'));
+                  
