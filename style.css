@@ -30,7 +30,8 @@ iframe{
     width: 88vw;
     height: 88vh;
     border:none;
-    box-shadow: 0 0px 5px black;
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    border-radius: 20px;
 }
 #search{
     display: flex;
