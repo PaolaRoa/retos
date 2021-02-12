@@ -58,36 +58,39 @@ li{
 }
 
 .nav{
-  display: none;
   align-self: flex-start;
   align-content: flex-end;
   height: 100vh;
-  transition-duration: 1000ms;
+  transform: translateX(-100%);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
 }
 .nav-black{
   background-color: black;
   width: 27vw;
-  transition-duration: 1000ms;
 
 }
 .nav-red{
   background-color: red;
   width: 25vw;
-  transition-duration:1500ms ;
-  
+  transition-delay: 0.2s;
+
+
 }
 .nav-white{
   background-color: rgb(255, 255, 255);
   position:fixed;
   width: 23vw;
-  transition-duration: 2000ms;
+  transition-delay: 0.4s;
 }
 
 .visible{
-  display: flex;
-  flex-direction: column;
+  transform: translateX(0);
+  transition: 1s;
+  transition-timing-function: ease-out;
 
 }
+
 .btnHide{
   display: none;
 }

@@ -25,7 +25,8 @@ CSS
 
 - puedes usar un transform translateX para el efecto en el eje X
 
-- Crear cada estilo para cada pestaña de navegación (ejemplo .nav-white .nav-white.visible) tener en cuenta que las transiciones deben ser transition-delay: 0.4s;
+- Crear cada estilo para cada pestaña de navegación (ejemplo .nav-white .nav-white.visible) tener
+ en cuenta que las transiciones deben ser transition-delay: 0.4s;
 
 JS
 
