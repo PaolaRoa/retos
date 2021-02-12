@@ -11,6 +11,12 @@ body {
   color: #222;
   padding-bottom: 50px;
 }
+a{
+  text-decoration: none;
+  margin: 20px;
+  color:white
+}
+
 
 .container {
   max-width: 1200px;
@@ -91,5 +97,8 @@ body {
 }
 
 .onscroll{
-  background-color: white;
+  background-color: rgb(192, 255, 163);
+}
+.act a{
+  color: rgb(5, 2, 2);
 }
