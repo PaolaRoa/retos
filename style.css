@@ -105,6 +105,16 @@ ul{
   }
  .listShow{
      width: 100vw;
+     margin-top: 30px;
+ }
+ 
+ #rName{
+     color: hsla(59, 96%, 43%, 1);
+     font-family: 'Major Mono Display', monospace;
+     font-size: 2vw;
+     text-align: center;
+     margin-top: 100px;
+     margin-bottom: 0px;
  }
  
  .lista{
