@@ -122,7 +122,7 @@ a:hover{
 
  .liSearch{
     background: hsla(59, 96%, 43%, 1);
-    width: 20vw;
+    padding: 5px;
     float: inline-start;
 
  }
@@ -141,6 +141,5 @@ a:hover{
  }
 
  .searchList{
-     display: absolute;
-     z-index: 4;
+
  }
