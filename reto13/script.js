@@ -1,5 +1,6 @@
 const result = document.getElementById('result')
 const filter = document.getElementById('filter')
+const search = document.getElementById('search')
 const listItems = []
 
 getData()

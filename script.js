@@ -3,6 +3,11 @@ const atras = document.querySelector("#atras");
 const adelante = document.querySelector("#adelante");
 const list = document.querySelector(".lista")
 const showList = document.querySelector(".listShow");
+const search = document.getElementById('search');
+const searchList = document.querySelector('.searchList');
+
+// console.log(searchList)
+
 
 const nombres=[
     {
@@ -106,14 +111,14 @@ const nombres=[
       "nombre": "Github Profiles"
     }
   ]
-console.log(nombres[1].nombre)
+// console.log(nombres[1].nombre)
 
 let url = ``
 let retosurl = []
 let position = 0;
 
 
-console.log(list)
+// console.log(list)
 
 adelante.addEventListener('click', ()=>{
     console.log("clic adelante")
@@ -151,6 +156,8 @@ const createList = () =>{
     retosurl.map(url => {
         let num = retosurl.indexOf(url);
         item = document.createElement("li");
+        item.classList.add('liReto')
+        item.id = num;
         item.innerHTML = `<a href="${url}" target="blank">Reto # ${num+1} / ${nombres[num].nombre} </a>`;
         // console.log(num)
         // console.log(nombres.length, retosurl.length)
@@ -174,8 +181,35 @@ const activeFrame = ()=>{
 }
 
 createList()
-console.log(retosurl[position])
+// console.log(retosurl[position])
 
 // console.log(retosurl)
+const items = document.querySelectorAll('.liReto');
+    
+items.forEach(item => {
+        // console.log(item.innerText);
+        let newItem = item.cloneNode(true);
+        newItem.removeAttribute("id");
+        newItem.className = "liSearch hide"
+        searchList.appendChild(newItem);
+    })
+
 
 showList.addEventListener('click', ()=> list.classList.toggle('active'))
+
+function filterData(searchTerm) {
+
+    const liSearch = document.querySelectorAll('.liSearch');
+    console.log(liSearch)
+    liSearch.forEach(item => {
+        if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+            item.classList.remove('hide')
+        } else {
+            item.classList.add('hide');
+            
+        }
+    })
+    
+}
+
+search.addEventListener('input', (e)=>filterData(e.target.value)) 

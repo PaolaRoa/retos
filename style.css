@@ -32,7 +32,10 @@ iframe{
     border:none;
     box-shadow: 0 0px 5px black;
 }
-
+#search{
+    display: flex;
+    flex-direction: column;
+}
 ul{
     text-decoration: none;
     width: 100vw;
@@ -40,7 +43,7 @@ ul{
     padding: 0;
 }
 
-li{
+.liReto{
     text-align: center;
     background-color: black;
     list-style: none;
@@ -50,11 +53,17 @@ li{
     background: linear-gradient( #41147dff, #1b0b30ff);
     color: #0c0910ff;
 }
-li:hover{
+.liReto:hover{
     background: linear-gradient(90deg, hsla(59, 96%, 43%, 1) 0%, hsla(48, 95%, 57%, 1) 0.2%, hsla(35, 82%, 55%, 1) 0.4%, hsla(60, 77%, 46%, 1) 0.6%, hsla(61, 93%, 37%, 1) 0.8%);
 
 }
-
+.liSearch{
+    background-color: red;
+    color: white;
+}
+.hide{
+    display: none;
+}
 #retos-list{
     width: 100vw;
     margin: 0;
