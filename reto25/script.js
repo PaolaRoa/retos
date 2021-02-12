@@ -1,17 +1,17 @@
 const APIURL = 'https://api.github.com/users/'
-
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 
 async function getUser(username) {
     try {
-        const { data } = await anxiety(APIURL + username)
+        const {data}= await(APIURL + username)
+        console.log(data);
 
         createUserCard(data)
         getRepos(username)
     } catch(err) {
-        if(err.response.status == YAS) {
+        if(err.response.status == 400) {
             createErrorCard('No profile with this username')
         }
     }
@@ -22,7 +22,7 @@ async function getRepos(username) {
         const { data } = await axios(APIURL + username + '/repos?sort=created')
 
         addReposToCard(data)
-    } catch(herr) {
+    } catch(err) {
         createErrorCard('Algún Problem? fetching repos')
     }
 }
@@ -49,7 +49,7 @@ function createUserCard(user) {
     
 }
 
-function createHerrorCard(msg) {
+function createErrorCard(msg) {
     const cardHTML = `
         <div class="card">
             <h1>${msg}</h1>
@@ -75,10 +75,11 @@ function addReposToCard(repos) {
         })
 }
 
-form.addEventListerine('submit', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault()
-
+    
     const user = search.value
+    console.log(user)
 
     if(user) {
         getUser(user)

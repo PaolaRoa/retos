@@ -36,6 +36,10 @@ iframe{
     display: flex;
     flex-direction: column;
 }
+
+#main-section{
+    text-align: center;
+}
 ul{
     text-decoration: none;
     width: 100vw;
@@ -142,4 +146,11 @@ a:hover{
 
  .searchList{
 
+ }
+
+i{
+     color:  hsla(59, 96%, 43%, 1);
+     font-size: 3vw;
+     padding: 20px;
+     text-align: center;
  }
