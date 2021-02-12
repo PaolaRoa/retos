@@ -8,8 +8,8 @@ body{
     /* background: #0f0c29;   */
     /* background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  
     background: linear-gradient(to top, #24243e, #302b63, #0f0c29);  */
-    background-image: linear-gradient(to left bottom, #0b001f, #171352, #2a198a, #4719c4, #6f00ff);
-    height: 100vh;
+    /* background-image: linear-gradient(to left bottom, #0b001f, #171352, #2a198a, #4719c4, #6f00ff); */
+    background: linear-gradient( #41147dff, #1b0b30ff, #0c0910ff);
     overflow-x: hidden;
     margin: 0;
 }
@@ -42,11 +42,17 @@ ul{
 
 li{
     text-align: center;
-    color: white;
     background-color: black;
     list-style: none;
     width: 100vw;
     margin: 0;
+    padding: 10px;
+    background: linear-gradient( #41147dff, #1b0b30ff);
+    color: #0c0910ff;
+}
+li:hover{
+    background: linear-gradient(90deg, hsla(59, 96%, 43%, 1) 0%, hsla(48, 95%, 57%, 1) 0.2%, hsla(35, 82%, 55%, 1) 0.4%, hsla(60, 77%, 46%, 1) 0.6%, hsla(61, 93%, 37%, 1) 0.8%);
+
 }
 
 #retos-list{
@@ -65,6 +71,17 @@ li{
     
     margin-top: -40vh;
     transform: translateY(-40vh);
+    background: linear-gradient(90deg, hsla(59, 96%, 43%, 1) 0%, hsla(48, 95%, 57%, 1) 0.2%, hsla(35, 82%, 55%, 1) 0.4%, hsla(60, 77%, 46%, 1) 0.6%, hsla(61, 93%, 37%, 1) 0.8%);
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 10px;
+
+
 
     /* top: 50%;
     transform: translateY(-90%);
@@ -78,10 +95,18 @@ li{
  
  .lista{
      display: none;
-     transition-duration: 10s;
+     transition-duration: 3s;
+    
  }
 
+ .lista a{
+     text-decoration: none;
+     color:#b5ebccff;
+     font-family: 'Montserrat', sans-serif;
+ }
+.lista a:hover{
+    color: #0c0910ff;
+}
  .active{
      display: block;
-     transition-duration: 10s;
  }

@@ -4,6 +4,109 @@ const adelante = document.querySelector("#adelante");
 const list = document.querySelector(".lista")
 const showList = document.querySelector(".listShow");
 
+const nombres=[
+    {
+      "num": 1,
+      "nombre": "Expanding Cards"
+    },
+    {
+      "num": 2,
+      "nombre": "Progress Steps"
+    },
+    {
+      "num": 3,
+      "nombre": "Rotating Navigation"
+    },
+    {
+      "num": 4,
+      "nombre": "Hidden Search"
+    },
+    {
+      "num": 5,
+      "nombre": "Blurry Loading"
+    },
+    {
+      "num": 6,
+      "nombre": "Drag N Drop"
+    },
+    {
+      "num": 7,
+      "nombre": "Auto Text Effect"
+    },
+    {
+      "num": 8,
+      "nombre": "Hoverboard"
+    },
+    {
+      "num": 9,
+      "nombre": "Scroll Animation"
+    },
+    {
+      "num": 10,
+      "nombre": "Form Wave Animation"
+    },
+    {
+      "num": 11,
+      "nombre": "Dad Jokes"
+    },
+    {
+      "num": 12,
+      "nombre": "Sound Board"
+    },
+    {
+      "num": 13,
+      "nombre": "Live User Filter"
+    },
+    {
+      "num": 14,
+      "nombre": "Button Ripple Effect"
+    },
+    {
+      "num": 15,
+      "nombre": "background Slider"
+    },
+    {
+      "num": 16,
+      "nombre": "Kinetic CSS Loader"
+    },
+    {
+      "num": 17,
+      "nombre": "Netflix Navigation"
+    },
+    {
+      "num": 18,
+      "nombre": "testimonial Box Switcher"
+    },
+    {
+      "num": 19,
+      "nombre": "Pokedex"
+    },
+    {
+      "num": 20,
+      "nombre": "Doble click heart"
+    },
+    {
+      "num": 21,
+      "nombre": "Event KeyCodes"
+    },
+    {
+      "num": 22,
+      "nombre": "mobile Nav Navigation"
+    },
+    {
+      "num": 23,
+      "nombre": "Drink Water"
+    },
+    {
+        "num": 24,
+        "nombre": "Feedback UI design"
+      },
+    {
+      "num": 25,
+      "nombre": "Github Profiles"
+    }
+  ]
+console.log(nombres[1].nombre)
 
 let url = ``
 let retosurl = []
@@ -46,8 +149,11 @@ for(i=1; i<26; i++){
 
 const createList = () =>{
     retosurl.map(url => {
+        let num = retosurl.indexOf(url);
         item = document.createElement("li");
-        item.innerHTML = `<a href="${url}" target="blank">Reto # ${retosurl.indexOf(url)+1}</a>`;
+        item.innerHTML = `<a href="${url}" target="blank">Reto # ${num+1} / ${nombres[num].nombre} </a>`;
+        // console.log(num)
+        // console.log(nombres.length, retosurl.length)
         list.appendChild(item)
         // console.log(item)
     })
