@@ -108,7 +108,7 @@ const nombres=[
       },
     {
       "num": 25,
-      "nombre": "Github Profiles"
+      "nombre": "Sticky Navigation"
     }
   ]
 // console.log(nombres[1].nombre)
