@@ -108,18 +108,27 @@ ul{
     
  }
 
- .lista a{
+ a{
      text-decoration: none;
      color:#b5ebccff;
      font-family: 'Montserrat', sans-serif;
  }
-.lista a:hover{
+a:hover{
     color: #0c0910ff;
 }
  .active{
      display: block;
  }
 
+ .liSearch{
+    background: hsla(59, 96%, 43%, 1);
+    width: 20vw;
+    float: inline-start;
+
+ }
+.liSearch a{
+    color: #1b0b30ff;
+}
  @media(max-width : 600px){
         #prevRetos{
             display: flex;
@@ -129,4 +138,9 @@ ul{
             margin-top: 10px;
             transform: translateY(0);
         }
+ }
+
+ .searchList{
+     display: absolute;
+     z-index: 4;
  }
