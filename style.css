@@ -33,6 +33,13 @@ iframe{
     box-shadow: 0 0px 50px rgb(0, 0, 0);
     border-radius: 20px;
 }
+footer {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 #search{
     display: flex;
     flex-direction: column;
@@ -174,4 +181,21 @@ i{
     list-style: none;
 
 
+}
+.RRSS {
+    padding: 20px;
+}
+.logo {
+    width: 100px;
+    margin: 20px;
+    transition: 2s;
+}
+
+p i{
+    font-size: 15px;
+}
+
+p{
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
 }
