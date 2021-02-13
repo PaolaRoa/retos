@@ -69,7 +69,7 @@ const createPokemonCard = (pokemon) => {
 	newName.innerHTML = name;
 	newClass.classList.add('type');
 	newClass.innerHTML = 'Type: '
-	newClassSpan.innerHTML = color;
+	newClassSpan.innerHTML = pokemon.types[0].type.name;
 
 	newClass.appendChild(newClassSpan);
 
