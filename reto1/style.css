@@ -18,6 +18,8 @@ body {
   display: flex;
   width: 90vw;
   justify-items: center;
+  justify-content: space-around;
+  
 }
 
 .panel {
@@ -28,7 +30,7 @@ body {
   color: #fff;
   cursor: pointer;
   margin: 10px;
-  flex: 0.5;
+  width: 7vw;
   border-radius: 50px;
   transition: 1500ms;
   transition-timing-function: ease-in-out;
@@ -46,7 +48,7 @@ body {
 
 .panel.active {
     display: flex;
-    flex: 6;
+    width: 65vw;
     border-radius: 30px;
     transition: 1500ms;
     transition-timing-function: ease-in-out;
